@@ -1,0 +1,150 @@
+<style>
+.choose-service-section { background-color: #fff; display: flex; padding-bottom: 190px; flex-direction: column; overflow: hidden; }
+@media (max-width: 991px) { .choose-service-section { padding-bottom: 100px; } }
+.navigation { background-color: #fff; box-shadow: 0 4px 60px rgba(0, 0, 0, 0.05); display: flex; width: 100%; gap: 20px; overflow: hidden; font-family: Poppins, sans-serif; color: #114148; font-weight: 500; text-align: center; flex-wrap: wrap; justify-content: space-between; padding: 31px 79px; }
+@media (max-width: 991px) { .navigation { max-width: 100%; padding: 0 20px; } }
+.logo { aspect-ratio: 5.03; object-fit: contain; object-position: center; width: 206px; max-width: 100%; margin: auto 0; }
+.nav-items { display: flex; gap: 40px 73px; flex-wrap: wrap; }
+@media (max-width: 991px) { .nav-items { max-width: 100%; } }
+.nav-links { display: flex; align-items: center; gap: 40px 56px; font-size: 16px; justify-content: start; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+.nav-link { align-self: stretch; margin: auto 0; }
+.dropdown { align-self: stretch; display: flex; align-items: center; gap: 6px; color: #000; white-space: nowrap; justify-content: start; margin: auto 0; }
+@media (max-width: 991px) { .dropdown { white-space: initial; } }
+.dropdown-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 14px; align-self: stretch; margin: auto 0; }
+.cta-button { border-radius: 41px; background-color: #34b6c5; display: flex; min-height: 67px; align-items: center; gap: 8px; font-size: 18px; justify-content: center; padding: 20px 24px; }
+@media (max-width: 991px) { .cta-button { padding: 0 20px; } }
+.cta-text { align-self: stretch; margin: auto 0; }
+.cta-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 13px; align-self: stretch; margin: auto 0; }
+.content-wrapper { display: flex; width: 518px; max-width: 100%; flex-direction: column; justify-content: start; margin: 80px 0 0 120px; }
+@media (max-width: 991px) { .content-wrapper { margin-top: 40px; } }
+.content-header { display: flex; width: 100%; flex-direction: column; font-family: "Bricolage Grotesque", -apple-system, Roboto, Helvetica, sans-serif; justify-content: center; }
+@media (max-width: 991px) { .content-header { max-width: 100%; } }
+.section-title { color: #000; text-align: center; font-size: 32px; font-weight: 400; align-self: start; }
+.section-description { color: #000; font-size: 16px; font-weight: 300; margin-top: 16px; }
+@media (max-width: 991px) { .section-description { max-width: 100%; } }
+.service-list { display: flex; margin-top: 40px; width: 100%; flex-direction: column; justify-content: start; }
+@media (max-width: 991px) { .service-list { max-width: 100%; } }
+.service-card { border-radius: 16px; box-shadow: 0 6px 6px 0 rgba(0, 83, 125, 0.1); background-color: #fdfdfd; display: flex; width: 100%; flex-direction: column; justify-content: center; padding: 16px; margin-top: 26px; }
+.service-card:first-child { margin-top: 0; }
+@media (max-width: 991px) { .service-card { max-width: 100%; } }
+.card-content { display: flex; width: 100%; align-items: center; gap: 16px; justify-content: start; flex-wrap: wrap; }
+@media (max-width: 991px) { .card-content { max-width: 100%; } }
+.card-thumbnail { border-radius: 8px; background-color: #f7f7f1; box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.11); align-self: stretch; display: flex; align-items: center; gap: 8px; justify-content: center; width: 96px; height: 96px; margin: auto 0; }
+.thumbnail-image { border-radius: 7px; background-color: #f7f7f1; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); align-self: stretch; display: flex; width: 96px; flex-direction: column; overflow: hidden; align-items: center; justify-content: center; height: 96px; margin: auto 0; padding: 0 10px; }
+.thumbnail-image img { aspect-ratio: 1; object-fit: contain; object-position: center; width: 100%; }
+.card-text { align-self: stretch; display: flex; min-width: 240px; flex-direction: column; font-family: Roboto, sans-serif; justify-content: start; flex: 1; flex-basis: 12px; margin: auto 0; }
+.card-title-description { display: flex; width: 100%; flex-direction: column; justify-content: start; }
+.card-title { color: #001018; font-feature-settings: "liga" off, "clig" off; font-size: 20px; font-weight: 600; line-height: 1.2; }
+.card-description { color: #909090; font-feature-settings: "liga" off, "clig" off; font-size: 14px; font-weight: 400; line-height: 1; }
+.card-icon { align-self: stretch; display: flex; min-height: 48px; align-items: center; gap: 10px; justify-content: center; width: 44px; margin: auto 0; padding: 8px 6px; }
+.card-icon img { aspect-ratio: 1; object-fit: contain; object-position: center; width: 32px; align-self: stretch; margin: auto 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+</style>
+
+<section class="choose-service-section">
+  <header class="navigation">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/df9e5cc997eeafddac995172dcad7ba26ba8d1d9224d8c418f30a9c215295194?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Company Logo" class="logo" />
+    <nav class="nav-items">
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">About us</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Platform</a>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/facbdbce191e06deade0f0a11d013ebe26f74d9f6257f6e9f626c2e700b7a47a?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="dropdown-icon" />
+        </li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">Services</a>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e91edc35ea60aa61ee465714cc0fd4355f1c96df5b16f19617f6b31d133c0862?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="dropdown-icon" />
+        </li>
+      </ul>
+      <a href="#" class="cta-button">
+        <span class="cta-text">Get Started</span>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c8061c6a7978e8023300bac32321b665684a9c587636d4c9ef57f4a23630d9ac?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="cta-icon" />
+      </a>
+    </nav>
+  </header>
+
+  <main class="content-wrapper">
+    <div class="content-header">
+      <h1 class="section-title">Choose your service</h1>
+      <p class="section-description">Choose the specific service that fits your needs. Select from a range of subcategories to narrow down your perfect video editing solution</p>
+    </div>
+
+    <div class="service-list">
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/db214ca03bedad4b36597fbb3b8c59ed9f1430311bde387a553126e7efe40fc9?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="2D Animation Icon" />
+            </div>
+          </div>
+          <div class="card-text">
+            <div class="card-title-description">
+              <h2 class="card-title">2D Animation</h2>
+              <p class="card-description">Bring ideas to life with engaging 2D animations.</p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" />
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bae8c70118cab5cbd256ef4675586cab28bb7e24fd68a48012376fecbbde9f29?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="3D Animation Icon" />
+            </div>
+          </div>
+          <div class="card-text">
+            <div class="card-title-description">
+              <h2 class="card-title">3D Animation</h2>
+              <p class="card-description">Create immersive experiences with stunning 3D animations.</p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" />
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a510b10ac61717912c1bd0cb6a7f694bc3d6e468b8299635e29bc92c23761edf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Motion Graphics Icon" />
+            </div>
+          </div>
+          <div class="card-text">
+            <div class="card-title-description">
+              <h2 class="card-title">Motion Graphics</h2>
+              <p class="card-description">Enhance visuals with motion graphics for dynamic storytelling.</p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" />
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c76a52277093cf53675d01c0fbd6d170e125fcf58ea1425f675ed6c04134014b?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Custom Video Icon" />
+            </div>
+          </div>
+          <div class="card-text">
+            <div class="card-title-description">
+              <h2 class="card-title">Custom video</h2>
+              <p class="card-description">Share your vision, and we'll create a custom video that fits your exact needs.</p>
+            </div>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" />
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+</section>
