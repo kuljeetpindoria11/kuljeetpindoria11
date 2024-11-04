@@ -1,0 +1,150 @@
+<style>
+.wedding-event-coverage { background-color: #fff; display: flex; padding-bottom: 190px; flex-direction: column; overflow: hidden; }
+.nav-container { background-color: #fff; box-shadow: 0 4px 60px rgba(0, 0, 0, 0.05); display: flex; width: 100%; gap: 20px; overflow: hidden; font-family: Poppins, sans-serif; color: #114148; font-weight: 500; text-align: center; flex-wrap: wrap; justify-content: space-between; padding: 31px 79px; }
+.logo { aspect-ratio: 5.03; object-fit: contain; object-position: center; width: 206px; max-width: 100%; margin: auto 0; }
+.nav-items { display: flex; gap: 40px 73px; flex-wrap: wrap; }
+.nav-links { display: flex; align-items: center; gap: 40px 56px; font-size: 16px; justify-content: start; flex-grow: 1; flex-basis: auto; margin: auto 0; }
+.nav-link { align-self: stretch; margin: auto 0; }
+.dropdown-container { align-self: stretch; display: flex; align-items: center; gap: 6px; color: #000; white-space: nowrap; justify-content: start; margin: auto 0; }
+.dropdown-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 14px; align-self: stretch; margin: auto 0; }
+.cta-button { border-radius: 41px; background-color: #34b6c5; display: flex; min-height: 67px; align-items: center; gap: 8px; font-size: 18px; justify-content: center; padding: 20px 24px; }
+.cta-text { align-self: stretch; margin: auto 0; }
+.cta-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 13px; align-self: stretch; margin: auto 0; }
+.content-wrapper { display: flex; width: 518px; max-width: 100%; flex-direction: column; justify-content: start; margin: 80px 0 0 120px; }
+.service-header { display: flex; width: 100%; flex-direction: column; align-items: start; font-family: "Bricolage Grotesque", -apple-system, Roboto, Helvetica, sans-serif; text-align: center; justify-content: center; }
+.service-title { color: #000; font-size: 32px; font-weight: 400; }
+.service-description { color: #000; font-size: 16px; font-weight: 300; margin-top: 16px; }
+.service-cards-container { display: flex; margin-top: 40px; width: 100%; flex-direction: column; justify-content: start; }
+.service-card { border-radius: 16px; box-shadow: 0 6px 6px 0 rgba(0, 83, 125, 0.1); background-color: #fdfdfd; display: flex; width: 100%; flex-direction: column; justify-content: center; padding: 16px; margin-top: 26px; }
+.card-content { display: flex; width: 100%; align-items: center; gap: 16px; justify-content: start; flex-wrap: wrap; }
+.card-thumbnail { border-radius: 8px; background-color: #f7f7f1; box-shadow: 2px 4px 11px rgba(0, 0, 0, 0.11); align-self: stretch; display: flex; align-items: center; gap: 8px; justify-content: center; width: 96px; height: 96px; margin: auto 0; }
+.thumbnail-image { border-radius: 7px; background-color: #f7f7f1; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); align-self: stretch; display: flex; width: 96px; flex-direction: column; overflow: hidden; align-items: center; justify-content: center; height: 96px; margin: auto 0; padding: 0 10px; }
+.card-text { align-self: stretch; display: flex; min-width: 240px; flex-direction: column; font-family: Roboto, sans-serif; justify-content: start; flex: 1; flex-basis: 12px; margin: auto 0; }
+.card-title { color: #001018; font-feature-settings: "liga" off, "clig" off; font-size: 20px; font-weight: 600; line-height: 1.2; }
+.card-description { color: #909090; font-feature-settings: "liga" off, "clig" off; font-size: 14px; font-weight: 400; line-height: 20px; }
+.card-icon { align-self: stretch; display: flex; min-height: 48px; align-items: center; gap: 10px; justify-content: center; width: 44px; margin: auto 0; padding: 8px 6px; }
+.icon-image { aspect-ratio: 1; object-fit: contain; object-position: center; width: 32px; align-self: stretch; margin: auto 0; }
+@media (max-width: 991px) {
+  .wedding-event-coverage { padding-bottom: 100px; }
+  .nav-container { max-width: 100%; padding: 0 20px; }
+  .nav-items { max-width: 100%; }
+  .dropdown-container { white-space: initial; }
+  .cta-button { padding: 0 20px; }
+  .content-wrapper { margin-top: 40px; }
+  .service-header { max-width: 100%; }
+  .service-description { max-width: 100%; }
+  .service-card { max-width: 100%; }
+  .card-content { max-width: 100%; }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+</style>
+
+<section class="wedding-event-coverage">
+  <header class="nav-container">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/df9e5cc997eeafddac995172dcad7ba26ba8d1d9224d8c418f30a9c215295194?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Company Logo" class="logo" />
+    <nav class="nav-items">
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">About us</a></li>
+        <li class="dropdown-container">
+          <a href="#" class="nav-link">Platform</a>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/facbdbce191e06deade0f0a11d013ebe26f74d9f6257f6e9f626c2e700b7a47a?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="dropdown-icon" />
+        </li>
+        <li class="dropdown-container">
+          <a href="#" class="nav-link">Services</a>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e91edc35ea60aa61ee465714cc0fd4355f1c96df5b16f19617f6b31d133c0862?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="dropdown-icon" />
+        </li>
+      </ul>
+      <a href="#" class="cta-button">
+        <span class="cta-text">Get Started</span>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c8061c6a7978e8023300bac32321b665684a9c587636d4c9ef57f4a23630d9ac?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="cta-icon" />
+      </a>
+    </nav>
+  </header>
+
+  <main class="content-wrapper">
+    <div class="service-header">
+      <h1 class="service-title">Choose your service</h1>
+      <p class="service-description">Choose the specific service that fits your needs. Select from a range of subcategories to narrow down your perfect video editing solution</p>
+    </div>
+
+    <div class="service-cards-container">
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b98b25888f8d2aaafbd7796e7d75685a860674aa1012f669e6132ed6780f8be0?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Wedding Videos Thumbnail" />
+            </div>
+          </div>
+          <div class="card-text">
+            <h2 class="card-title">Wedding Videos</h2>
+            <p class="card-description">Preserve memories with high-quality wedding coverage, wedding films, snippets and more</p>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="icon-image" />
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8152c2d35839b68671cc5a55e4123a22970629900b42714872be3787ba92c94c?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Corporate Event Videos Thumbnail" />
+            </div>
+          </div>
+          <div class="card-text">
+            <h2 class="card-title">Corporate Event Videos</h2>
+            <p class="card-description">Document key moments in corporate events with precision.</p>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="icon-image" />
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2722e82162689e774473cb8614aab8a74c4d216d3d987e6592f88395ea751458?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Event Coverage Thumbnail" />
+            </div>
+          </div>
+          <div class="card-text">
+            <h2 class="card-title">Event Coverage</h2>
+            <p class="card-description">Capture every moment—concerts, festivals, flea markets, and more.</p>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="icon-image" />
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-content">
+          <div class="card-thumbnail">
+            <div class="thumbnail-image">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c76a52277093cf53675d01c0fbd6d170e125fcf58ea1425f675ed6c04134014b?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="Custom Video Thumbnail" />
+            </div>
+          </div>
+          <div class="card-text">
+            <h2 class="card-title">Custom video</h2>
+            <p class="card-description">Share your vision, and we'll create a custom video that fits your exact needs.</p>
+          </div>
+          <div class="card-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d553d588507b4455a070693da05f615303982f8f72b4fa59b1f99b604dfde2bf?placeholderIfAbsent=true&apiKey=a8e806053df2486eabfa35af00056494" alt="" class="icon-image" />
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+</section>
